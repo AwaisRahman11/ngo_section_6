@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.row {
+  height: auto;
+  background-color: #f0f4f8;
+}
+p,
+h6 {
+  margin: 0;
+}
+.fa-people-group {
+  font-size: 18px;
+  padding: 10px 8px;
+  background-color: rgb(244, 197, 235, 0.743);
+  border-radius: 50%;
+}
+.fa-calendar-days {
+  font-size: 18px;
+  padding: 10px 12px;
+  background-color: rgba(244, 197, 235, 0.743);
+  border-radius: 50%;
+}
+.card {
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    overflow: hidden;
+}
+.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.rank-box {
+  height: 11vh;
+  width: 90%;
+  margin: auto;
+  border-radius: 8px;
+  background-color: white;
+  margin-top: -20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.progress {
+  width: 95%;
+  margin: auto;
+  height: 16%;
+}
+.progress .progress-bar {
+  background-color: rgb(223, 44, 44);
+}
+.tag span {
+  position: absolute;
+  background-color: rgb(223, 44, 44);
+  color: white;
+  top: 8px;
+  left: 5px;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.half-highlight {
+  position: relative;
+  display: inline-block;
+  z-index: 99;
+}
+
+.half-highlight::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: rgb(255, 208, 36) !important;
+  z-index: -1;
+}
+.heading-box h2::before {
+  content: url(heading.png);
+}
+.card-title:hover{
+  color: rgb(219, 21, 21);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
